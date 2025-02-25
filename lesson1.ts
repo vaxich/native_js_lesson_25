@@ -44,6 +44,14 @@ const newUser = {
     name: 'Farid',
     isStudent: true,
 }
+let user1 = {
+    name: 'Bob',
+    age: 32,
+    isStudent: false,
+  }
+  const user2 = user1
+  user2.name = 'Alex'
+  console.log(user1.name) // Алекс потому что, две переменные хранят ссылку на один объект.
 
 const copyUsers = [...users, newUser] // глубокое копирование
 
@@ -85,3 +93,14 @@ const superUserCopy2 = {
 
 
 const superUserCopy3 =  {...superUser, email: "vaxich"}       
+
+const person = {
+    name: 'Kirill',
+    age: 24,
+    adress: {
+      country: 'Poland',
+      city: 'Warsaw',
+    },
+  }
+  const { name, age } = person // Эквивалентно const name = person.name; const age = person.age;
+  console.log(name, age)
