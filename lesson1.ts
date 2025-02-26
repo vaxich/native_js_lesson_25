@@ -102,5 +102,5 @@ const person = {
       city: 'Warsaw',
     },
   }
-  const { name, age } = person // Эквивалентно const name = person.name; const age = person.age;
-  console.log(name, age)
+  //const { name, age } = person // Эквивалентно const name = person.name; const age = person.age;
+  //console.log(name, age)
